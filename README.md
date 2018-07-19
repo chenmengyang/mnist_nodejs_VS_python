@@ -1,11 +1,11 @@
 # mnist_nodejs_VS_python
 train CNN using tensorflow in Nodejs and Python, let's compare:
 
-code style: wip...
+codes: nodejs 170 lines vs python ? lines
 
-performance: wip...
+performance: nodejs 54 seconds for each epoch and python ? seconds for each epoch
 
-memory cost: wip...
+memory cost: unknown
 
 
 ## nodejs

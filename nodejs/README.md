@@ -6,6 +6,8 @@
 
 ## memory cost
 
+haven't test yet, but my PC was hot and seemed like will explode soon...
+
 ## code
 
 170 lines of codes in 3 files (mnist.js + mnistData.js + mnistModel.js)
