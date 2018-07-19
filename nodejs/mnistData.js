@@ -2,7 +2,7 @@ const tf = require('@tensorflow/tfjs');
 const fs = require('fs');
 
 // load the training set from file
-const trainingSetImages  = fs.readFileSync(__dirname + '/data/mnist/train-images-idx3-ubyte');
+const trainingSetImages  = fs.readFileSync('../data/mnist/train-images-idx3-ubyte');
 _ = trainingSetImages.readUInt32BE(0)
 const m_train_images = trainingSetImages.readUInt32BE(4)
 const train_width = trainingSetImages.readUInt32BE(8)
@@ -19,7 +19,7 @@ while(index1< (m_train_images * IMAGE_SIZE)) {
     train_images.push(imgBuf)
 }
 
-const trainSetLabels  = fs.readFileSync(__dirname + '/data/mnist/train-labels-idx1-ubyte');
+const trainSetLabels  = fs.readFileSync('../data/mnist/train-labels-idx1-ubyte');
 _ = trainSetLabels.readUInt32BE(0)
 const m_train_labels = trainSetLabels.readUInt32BE(4)
 const train_labels = [];
@@ -33,7 +33,7 @@ while (indexl1 < trainSetLabels.byteLength) {
 }
 
 // load the test set from file
-const testSetImages  = fs.readFileSync(__dirname + '/data/mnist/t10k-images-idx3-ubyte');
+const testSetImages  = fs.readFileSync('../data/mnist/t10k-images-idx3-ubyte');
 _ = testSetImages.readUInt32BE(0)
 const m_test_images = testSetImages.readUInt32BE(4)
 const test_width = testSetImages.readUInt32BE(8)
@@ -48,7 +48,7 @@ while(index2 < (m_test_images * IMAGE_SIZE)) {
     test_images.push(imgBuf)
 }
 
-const testSetLabels  = fs.readFileSync(__dirname + '/data/mnist/t10k-labels-idx1-ubyte');
+const testSetLabels  = fs.readFileSync('../data/mnist/t10k-labels-idx1-ubyte');
 _ = testSetLabels.readUInt32BE(0)
 const m_test_labels = testSetLabels.readUInt32BE(4)
 const test_labels = [];
