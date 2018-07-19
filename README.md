@@ -1,5 +1,9 @@
 # mnist_nodejs_VS_python
-train CNN using tensorflow in Nodejs and Python
+train CNN using tensorflow in Nodejs and Python, let's compare:
+
+code style: wip
+performance: wip
+memory cost: wip
 
 ## nodejs
 
